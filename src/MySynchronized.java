@@ -10,21 +10,23 @@ class MySynchronized {
     private int a = 0;
     private ReentrantLock lock = new ReentrantLock();
 
-    void writer(){
+    void writer(int i){
         lock.lock();
         try{
-            a ++;
+            a += i;
         } finally {
             lock.unlock();
         }
     }
 
-    void reader(){
+    int reader(){
         lock.lock();
+        int i;
         try {
-            int i = a + 1;
+            i = a + 1;
         } finally {
             lock.unlock();
         }
+        return i;
     }
 }

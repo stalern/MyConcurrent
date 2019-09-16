@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         MySynchronized mySynchronized = new MySynchronized();
-        mySynchronized.writer();
-        mySynchronized.reader();
+        mySynchronized.writer(10);
+        System.out.println(mySynchronized.reader());
     }
 }
