@@ -6,8 +6,10 @@ import java.util.concurrent.locks.ReentrantLock;
  * synchronized 的实现方式
  */
 public class MySynchronized {
+
     private int a = 0;
     private ReentrantLock lock = new ReentrantLock();
+
     public void writer(){
         lock.lock();
         try{
@@ -16,6 +18,7 @@ public class MySynchronized {
             lock.unlock();
         }
     }
+
     public void reader(){
         lock.lock();
         try {
