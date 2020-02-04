@@ -21,4 +21,4 @@
 17. 手写阻塞队列
 18. 手写多线程交替打印ABC
 
-* [Java并发面试笔记](https://editor.csdn.net/md/?articleId=104172353)
+* [Java并发面试笔记](https://blog.csdn.net/coder_what/article/details/104172353)
